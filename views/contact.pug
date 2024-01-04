@@ -1,0 +1,36 @@
+doctype html
+html 
+    head
+        title= "this is a pure pug"
+        style 
+            include ../styling/style.css
+    body
+        nav 
+            ul
+                li #[a(href="/home") home]
+                li #[a(href="/sevice") service]
+                li #[a(href="/about") about]
+                li #[a(href="/contact") contact us]
+        div.contact 
+            h2 contact us 
+            form(action="/contact" method="post") 
+                div.name2.details 
+                    label(for="name1") Name
+                    input(type="text" name="name" class="name" id="name1" placeholder="Enter your name")
+                div.email2.details
+                    label(for="email1") Email
+                    input(type="email", name="email" id="email1" placeholder="Enter your email")     
+                div.phone2.details
+                    label(for="phone") phone 
+                    input(type="text", name="phone" id="phone1" placeholder="Enter your phone")     
+                div.age2.details
+                    label(for="age") Age
+                    input(type="text", name="age" id="age1"  placeholder="Enter your age")
+                div.gender2.details
+                    label(for="gender") Gender 
+                    p male
+                    input(type='radio', name='gender',value='male')
+                    p female
+                    input(type='radio', name='gender',value='female') 
+                div.sumbit.details 
+                    input(type="submit", value="submit now" class="submit btn")

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: red;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+ul{
+    display: flex;
+    font-size:26px ;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    color: white;
+    margin:auto 44px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    border: 2px solid black;
+    height: 358px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background: url(https://images.unsplash.com/photo-1636036824578-d0d300a4effb?auto=format&fit=crop&q=80&w=1744&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
+    width: 100%;
+    height: 358px;
+    z-index: -1;
+    opacity: 0.8;
+}
+p{
+    font-weight: bold;
+}
+.container1{
+    border: 2px solid black;
+    height: 523px;
+}
+.container2{
+ 
+    height: 387px;
+    background-color: lightpink;
+}
+.motto{
+    position: relative;
+    text-align: center;
+    top: 23px;
+    font-size: 37px;
+}
+.ncontainer {
+    display: flex;
+    position: relative;
+    top: 100px;
+}
+.cards{
+    border: 2px solid black;
+    margin: 0px auto;
+    height: 304px;
+    width: 31%;
+    border-radius: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+   
+    font-size: 34px;
+ 
+}
+
+/*.container2 {
+    display: flex;
+    text-align: center;
+     align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}*/
+
+.sponsors{
+    font-size: 62px;
+    text-align: center;
+    position: relative;
+    top: 37px;
+}
+p{
+    position:relative;
+    top: 30px;
+    text-align: center ;
+}
+
+.spocontainer{
+
+    position: relative;
+    top: 119px;
+   
+    display: flex;
+    margin: 4px auto;
+}
+.spo{
+    margin:0px 96px;
+}
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+.contact{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh   ;
+
+}
+.details{
+    margin: 43px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+ 
+}
+
+#gender1{
+    position: relative;
+    left: -465px;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(https://wallpapers.com/images/featured/gaming-zl3vngxpvv04a30j.jpg) no-repeat center center;
+    z-index: -1;
+    opacity: 0.8;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.gender2 input{
+    position: relative;
+   
+    left: -48px;
+}
+.gender2 label{
+    margin-bottom: 10px;
+}
+.gender2 p{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 119px;
+    font-size: 31px;
+}
+
+.gender2{
+    display: flex;
+}
+.submit{
+    width: 102%;
+}
